@@ -1,0 +1,112 @@
+.mk-app-stock-card {
+    width: 100%;
+    height: 100%;
+    &-header {
+        flex-direction: row;
+        height: 50px;
+        flex: 0 0 50px;
+        padding: 0 10px;
+        overflow: hidden; //border-style: solid;
+        //border-width: 0 0 1px;
+        //border-color: #e7e6e6;
+        overflow: hidden;
+        &-left {
+            flex-direction: row;
+            align-items: center;
+        }
+        &-right {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+            .mk-btn {
+                margin-left: 10px
+            }
+        }
+    }
+    &-tabs {
+        height: 37px;
+        flex: 0 0 37px;
+        .ant-tabs-bar {
+            padding-left: 10px;
+        }
+    }
+    &-base {
+        padding: 10px;
+        flex: 0 0 620px;
+        overflow: auto;
+        align-items: center;
+        &-zone1 {
+            width: 1200px;
+            flex: 0 0 140px;
+            flex-direction: row;
+            &-left {
+                width: 880px;
+                flex: 0 0 880px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                min-height: 110px;
+                .mk-form-item {
+                    margin-bottom: 14px;
+                }
+                .ant-form-item-label {
+                    width: 100px;
+                    padding: 0px;
+                }
+                .ant-form-item-control-wrapper {
+                    width: 180px;
+                }
+                .mk-select {
+                    width: 100%;
+                }
+                .mk-datepicker {
+                    width: 100%;
+                }
+                &-checkbox {
+                    .ant-form-item-control-wrapper {
+                        width: 32px;
+                    }
+                }
+            }
+            &-right {
+                flex-direction: row;
+                &-right {
+                    flex: 0 0 50px;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                .mk-btn {
+                    margin-bottom: 5px;
+                }
+                .ant-carousel .slick-slide {
+                    text-align: center;
+                    height: 130px;
+                    line-height: 130px;
+                    background: #364d79;
+                    overflow: hidden;
+                }
+            }
+        }
+        &-zone2,
+        &-zone3,
+        &-zone4 {
+            width: 1200px;
+            padding: 0px 10px;
+        }
+        &-zone2,
+        &-zone3 {
+            flex: 0 0 130px;
+        }
+        &-splitter1,
+        &-splitter2 {
+            width: 1200px;
+            border: 0px dashed #ccc;
+            border-bottom-width: 1px;
+            margin-bottom: 8px;
+        }
+        &-splitter2 {
+            margin-top: 6px;
+        }
+    }
+}
