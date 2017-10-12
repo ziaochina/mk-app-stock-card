@@ -2,10 +2,14 @@ import { config, start, componentFactory } from 'mk-meta-engine'
 import * as mkComponents from 'mk-component'
 import myConfig  from './config'
 
+import mk_app_mea_unit_card_test from './apps/apps/mk-app-mea-unit-card/apps/mk-app-mea-unit-card-test/index.js'
+import mk_app_mea_unit_card from './apps/apps/mk-app-mea-unit-card/index.js'
 import mk_app_stock_card from './apps/mk-app-stock-card/index.js'
 
 const apps = {
 		
+	[mk_app_mea_unit_card_test.name]: mk_app_mea_unit_card_test,	
+	[mk_app_mea_unit_card.name]: mk_app_mea_unit_card,	
 	[mk_app_stock_card.name]: mk_app_stock_card,
 }
 
