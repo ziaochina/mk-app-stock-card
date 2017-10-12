@@ -4,6 +4,7 @@ import './mock.js' //脱离后台测试，启用mock，否则这行注释
 
 var _options = {}
 
+
 //配置fetch
 fetch.config({
 	mock: true, //脱离后台测试，启用mock，否则这行注释
