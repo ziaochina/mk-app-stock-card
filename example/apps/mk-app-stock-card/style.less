@@ -64,12 +64,11 @@
     }
     &-base {
         padding: 10px;
-        flex: 0 0 620px;
         overflow: auto;
-        align-items: center;
+        display: block;
         &-zone1 {
             width: 1200px;
-            flex: 0 0 140px;
+            margin: 0 auto;
             flex-direction: row;
             &-left {
                 width: 880px;
@@ -134,17 +133,19 @@
         &-zone4 {
             width: 1200px;
             padding: 0px 10px;
+            margin: 0 auto;
         }
         &-zone2,
         &-zone3 {
             flex: 0 0 130px;
+            height: 130px;
         }
         &-splitter1,
         &-splitter2 {
             width: 1200px;
             border: 0px dashed #ccc;
             border-bottom-width: 1px;
-            margin-bottom: 8px;
+            margin: 0px auto 8px auto;
         }
         &-splitter2 {
             margin-top: 6px;
@@ -152,15 +153,15 @@
     }
     &-stock {
         padding: 10px;
-        flex: 0 0 620px;
         overflow: auto;
-        align-items: center;
+        display: block;
         &-zone1 {
-            width: 1200px;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 110px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            min-height: 110px;
             .mk-form-item {
                 margin-bottom: 14px;
             }
@@ -187,15 +188,10 @@
             }
         }
     }
-
     &-barcode {
         padding: 10px;
-        flex: 0 0 620px;
-        overflow: auto;
-        align-items: center;
         &-zone1 {
-             width: 1200px;
-             flex: 1;
+            flex: 1;
         }
     }
 }

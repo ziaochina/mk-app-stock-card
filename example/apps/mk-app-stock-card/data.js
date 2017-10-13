@@ -691,7 +691,7 @@ export function getMeta() {
 						},
 						cell: {
 							name: 'cell',
-							component: "{{{if($isFocus(_ctrlPath)) debugger; return $isFocus(_ctrlPath) ? 'Input.Number' : 'DataGrid.TextCell'}}}",
+							component: "{{ $isFocus(_ctrlPath) ? 'Input.Number' : 'DataGrid.TextCell'}}",
 							className: "{{$getCellClassName(_ctrlPath,'right')}}",
 							value: "{{$numberFormat($isFocus(_ctrlPath),data.form.prices[_rowIndex].fifthTradePrice,2)}}",
 							onChange: "{{(v)=>$sf('data.form.prices.' + _rowIndex + '.fifthTradePrice', v)}}",
@@ -822,7 +822,7 @@ export function getMeta() {
 					children: [{
 						name: 'referCost',
 						component: 'Input.Number',
-						value: '{{{debugger;return data.form.referCost}}}',
+						value: '{{data.form.referCost}}',
 						onChange: "{{(v)=>$sf('data.form.referCost',v)}}",
 					}]
 				}, {
